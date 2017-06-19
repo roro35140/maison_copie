@@ -1,0 +1,167 @@
+﻿<!doctype html>
+<html lang="fr">
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/CSS/style.css" rel="stylesheet">
+    <link href="assets/CSS/font-awesome.min.css" rel="stylesheet">
+    
+    <title>Liberte-Egalite-Photocopies</title>
+
+</head>
+
+
+
+<body>
+    <div class="container-fluid page">
+        <div class="container">
+            <!--définition du header-->
+            <!--définition de la navbar de connexion-->
+            <header>
+                <div class="row">
+                    <div class="navbar navbar-form ">
+                        <div class="form-group">
+                            <button class="btn btn-warning btn-lg">
+                                <span class="glyphicon glyphicon-user"></span>
+                                <span>nom utilisateur</span>
+                            </button>
+                            <input type="text" class="input-sm form-control" placeholder="votre nom">;
+                            <button class="btn btn-warning btn-lg">
+                                <span class="glyphicon glyphicon-eye-close"></span>
+                                <span>mot de passe</span>
+                            </button>
+                            <input type="text" class="input-sm form-control" placeholder="votre mot de passe">
+                            <button type="submit" class="btn btn-warning btn-sm">
+                                <span class="glyphicon glyphicon-ok-circle"></span>
+                                envoyer
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--définition du log et barre de menu-->
+                
+                <nav class="navbar navbar-default">
+                    <ul class="nav navbar-nav">
+                        <div class="menu">
+                            <li>
+                                <img class="image-responsive" src="assets/images/logo.jpg">   
+                            </li>
+                        </div>
+                        <div class="menu">
+                            <li>
+                                <a href="index.html">accueil</a>
+                            </li>
+                        </div>
+                        <div class="menu">
+                            <li>
+                                <a href="user.html">créer un compte utilisteur</a>
+                            </li>
+                        </div>
+                        <div class="menu">
+                            <li>
+                                <a href="#">faire un devis en ligne</a>
+                            </li>
+                        </div>
+                        <div class="menu">
+                            <li>
+                                <a href="#">notre société</a>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+
+                <form action="#" method="post" >
+                    <div class="container">
+                        <img src="assets/images/devis.png"/>
+                    </div>
+                    <div class="col-lg-6">
+                      <fieldset>
+		                <legend>Vos Coordonnées</Legend>
+                           <p><label for="statut"> votre statut: </label>
+                               <select name="statut[]" autofocus  >
+		                            <option value="Particulier">Particulier</option>
+		                            <option value="Association">Association</option>
+		                            <option value="Entreprise">Entreprise</option>
+		                            <option value="Etudiant">Etudiant</option>
+		                            <option value="Administration">Administration ou le travail en équipe</option>
+                                </select> 
+                            </p>
+                            
+	                        <p><label for="ent">votre Raison sociale: </label>
+		                        <input type="text" name="ent" id="ent" / >
+                            </p>
+		                    
+                            <p><label for="adresse">votre adresse: </label>
+		                        <input type="text" name="adresse" id="adresse" />
+                            </p>
+                             <p><label for="complement"> complément  adresse: </label>
+		                        <input type="text" name="complemadresse" id="compladresse" />
+                            </p>
+                             <p><label for="ville">votre ville: </label>
+		                        <input type="text" name="ville" id="ville" />
+                            </p>
+                             <p><label for="tel">votre téléphone: </label>
+		                        <input type="text" name="tel" id="tel" />
+                            </p>
+                             <p><label for="mobile">votre mobile: </label>
+		                        <input type="text" name="mobile" id="mobile" />
+                            </p>
+
+				        </fieldset>
+		            </div>
+                    
+                    
+                    <div class="col-lg-6">
+                        <fieldset>
+		                <legend>Information Complémentaire</Legend>
+                           <p><label for="civilite">civilité: </label>
+                           <input type="radio" id="madame" name="civilite" value="Madame"/><label for="madame">Madame</label>
+		                    <input type="radio" id="monsieur" name="civilite" value="Monsieur"/><label for="monsieur">Monsieur</label></p>
+		                    <label for="pseudo">votre nom: </label>
+		                    <input type="text" name="pseudo" id="pseudo" autofocus />
+                            </p>
+                            
+	                        <p><label for="prenom">votre prénom: </label>
+		                        <input type="text" name="prenom" id="prenom" / >
+                            </p>
+		                    
+                            <p><label for="fonction">votre Fonction: </label>
+		                        <input type="text" name="fonction" id="fonction" />
+                            </p>
+                             <p><label for="info"> infos Libres: </label>
+		                        <textarea name="info" id="info" rows=2 cols="40"></textarea>
+                            </p>
+                            
+				        </fieldset>
+                       
+                     </div>
+                    <div class="submit">
+                        <button type="submit" class="btn btn-lg btn-primary">envoyer</button>
+                    </div>
+                    
+                </form>
+                <footer class="footerUser">
+                    <div class="col-lg-6 contact">
+                        <h5>CONNEXION EXPRESSE FACILE :
+                            Remplissez uniquement les 3 champs obligatoires (statut, nom, email)
+                            vous serez connecté directement à votre compte
+                            avec accès immédiat aux devis-en-ligne www.maison-copie.fr.
+                            Vous pourrez compléter votre "fiche identité" ultérieurement.
+                         </h5>
+                    </div>
+
+                    <div class="col-lg-6 contact">
+                        <h5>Conformément à la loi informatique et liberté n° 78-17 du 6/01/1978, vous disposez d'un droit d'accés et de rectification auprés de LA MAISON DE LA COPIE et du Secrétariat, 10 bis avenue Henri Fréville. 35200 RENNES. France, ou par mail : contact@maison-copie.fr
+                        POURRIELS, NON MERCI ! : Notre établissement préservera la tranquillité de votre boite mail, de la même façon que nous aimons voir préserver la tranquillité de notre boite mail,. C'est l'avantage des entreprises à échelle humaine. Notez également que notre société ne cède pas ses fichiers mails à des tiers.
+                        </h5>
+                    </div>
+                            
+                </footer>
+
+			</div>
+        </div>	
